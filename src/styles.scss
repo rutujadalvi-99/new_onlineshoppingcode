@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin: 0;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    background-color: white;
+    color: #fff;
+   
+}
+.box{
+    box-shadow: #000000 0px 5px 15px;
+    padding: 15px;
+
+
+}
+.hideScrollbar::-webkit-scrollbar{
+    display: none;
+}
+// filter card css
+.productcard .text{
+ transition: transform 0.3s ease-in-out;
+}
+.productcard:hover .textPart{
+    transform: translateY(-1rem);
+}
+
+.productcard:hover{
+    box-shadow: #000000 0px 5px 15px
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
