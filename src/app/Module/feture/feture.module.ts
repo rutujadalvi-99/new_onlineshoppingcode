@@ -27,7 +27,7 @@ import { AddressFormComponent } from './components/checkout/address-form/address
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { OrdercartComponent } from './components/order/ordercart/ordercart.component';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from '../shared/components/login/login.component';
 
 
 
@@ -55,7 +55,8 @@ import { LoginComponent } from './components/login/login.component';
     exports: [
         FetureComponent,
         HomeComponent,
-        ProductsComponent
+        ProductsComponent,
+        LoginComponent,
     ],
     imports: [
         CommonModule,

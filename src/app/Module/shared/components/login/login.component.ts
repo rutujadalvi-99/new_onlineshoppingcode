@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  showLogin = false;
+  OpenToLogin(){
+    this.showLogin = true;
+  }
+
+  OpenToSignup(){
+    this.showLogin=false;
+  }
 }

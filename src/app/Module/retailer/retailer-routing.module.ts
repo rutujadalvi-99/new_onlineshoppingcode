@@ -5,9 +5,13 @@ import { RetailerComponent } from './components/retailer.component';
 
 
 
+
+
 const routes: Routes = [
 
   {path:"",component:RetailerComponent,children:[
+  
+  
    
   ]},
  

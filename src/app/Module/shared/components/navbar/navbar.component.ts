@@ -10,21 +10,27 @@ import { Router } from '@angular/router';
 export class NavbarComponent {
 
   constructor(private router:Router){}
+  currentSection: string | null = null;
+  isNavbarContentOpen: boolean = false;
 
-  currentSection:any;
-  isNavbarContentOpen:any;
-
-// opennav bar section code
-  openNavbarContent(section:any){
-    this.isNavbarContentOpen=true;
-    this.currentSection=section;
-
+  openNavbarContent(section: string) {
+    this.isNavbarContentOpen = true;
+    this.currentSection = section;
+  console.log("this is hit");
+  
   }
-//close nav bar section
-  closeNavbarContent(){
-    this.isNavbarContentOpen=false;
+  openLogin(){
+    this.router.navigate(['/login']);
   }
 
+  openSeller(){
+    this.router.navigate(['/retailer']);
+    
+  }
+
+  closeNavbarContent() {
+    this.isNavbarContentOpen = false;
+  }
   navigateTo(path:any){
     this.router.navigate([path])
 

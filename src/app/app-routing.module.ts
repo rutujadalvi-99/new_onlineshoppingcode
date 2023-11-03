@@ -11,6 +11,7 @@ import { OrderComponent } from './Module/feture/components/order/order.component
 import { OrderDetailsComponent } from './Module/feture/components/order-details/order-details.component';
 import { AdminRoutingModule } from './Module/admin/admin-routing.module';
 import { RetailerRoutingModule } from './Module/retailer/retailer-routing.module';
+import { LoginComponent } from './Module/shared/components/login/login.component';
 
 const routes: Routes = [
   {path:"admin",loadChildren:()=>import("./Module/admin/admin-routing.module").then(m=>AdminRoutingModule)},
@@ -24,6 +25,9 @@ const routes: Routes = [
   {path:"payment-success",component:PaymentSuccessComponent},
   {path:"account/orders",component:OrderComponent},
   {path:"order/:id",component:OrderDetailsComponent},
+  {path:"login",component:LoginComponent},
+  {path:"forgetPassword", component:LoginComponent},
+  
  
 ];
 
